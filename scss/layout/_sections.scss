@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sections of the site/application.
+// -----------------------------------------------------------------------------
+nav {
+  @extend %clearfix;
+  background-color: black;
+  color: $white;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  .fa{
+    padding: 0.2em 0 ;
+  }
+
+}
+.hidden-nav {
+  height: 20vh;
+}
+
+.featured {
+  overflow: auto;
+  &__header{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background: $featured__header;
+    h1 {
+      font-size: 3em;
+      padding: 1em;
+    }
+    h2 {
+      padding: 0 0 1.5em 1.5em;
+      font-size: 2em;
+    }
+  }
+  img{
+    height: 750px;
+  }
+
+}
+
+.new {
+  &__header {
+    background-image: image('whats-new-tab.png');
+    height: 120px;
+    width: 85%;
+    margin: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.section__item {
+  padding: 2em;
+  font-size: 1.5em;
+  border-bottom: 3px dotted black;
+  .content {
+    padding: 1em;
+  }
+}
